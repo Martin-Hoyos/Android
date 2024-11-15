@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity9">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button"
+            android:onClick="verificar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.443"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.9" />
+
+        <RadioGroup
+            android:id="@+id/group"
+            android:layout_width="262dp"
+            android:layout_height="234dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.456"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.692">
+
+            <RadioButton
+                android:id="@+id/Trajano"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Marco Ulpio Trajano &quot; El Principe Perfecto&quot;" />
+
+            <RadioButton
+                android:id="@+id/Gladiator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Maximo Decimo Meridio  &quot;El Hispano&quot;" />
+
+            <RadioButton
+                android:id="@+id/Seneca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lucio Anneo Séneca &quot;" />
+
+            <RadioButton
+                android:id="@+id/Cornelio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Marco Cornelio Nigrino" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="329dp"
+            android:layout_height="55dp"
+            android:text="De estos famosos romanos, ¿cual es el unico que fue emperador y ademas nacido en Hispania?"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.069" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.564"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.215"
+            app:srcCompat="@drawable/images" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -8,12 +8,68 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:id="@+id/bienvenida"
+        android:layout_width="408dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="684dp"
+        android:fontFamily="casual"
+        android:text="Bienvenido"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColorLink="#D81B60"
+        android:textSize="42sp"
+        android:typeface="normal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="278dp"
+        android:layout_height="302dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="221dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bienvenida"
+        app:layout_constraintVertical_bias="0.133"
+        app:srcCompat="@drawable/_5b122edaf8828b0ebbb7425e40be723" />
+
+    <TextView
+        android:id="@+id/introdudcion"
+        android:layout_width="315dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="48dp"
+        android:text="Con estas preguntas de cultura genera veremos tu conocimiento en diferentes ambitos.          (Tiempo limite 30s por pregunta)"
+        app:layout_constraintBottom_toTopOf="@+id/comenzar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/comenzar"
+        android:layout_width="409dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="158dp"
+        android:layout_marginBottom="133dp"
+        android:onClick="comenzar"
+        android:text="COMENZAR"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/introdudcion" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

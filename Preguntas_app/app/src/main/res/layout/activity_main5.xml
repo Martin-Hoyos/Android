@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity5">
+    <TextView
+        android:id="@+id/un"
+        android:layout_width="357dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="27dp"
+        android:text="¿Cuál es el país con más pirámides en el mundo?"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="359dp"
+        android:layout_height="180dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/un"
+        app:srcCompat="@drawable/piramide" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="352dp"
+        android:layout_height="181dp"
+        android:layout_marginBottom="29dp"
+        app:layout_constraintBottom_toTopOf="@+id/up"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.542"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="1.0">
+
+        <RadioButton
+            android:id="@+id/egipto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Egipto"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/sudan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sudan"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/mex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mexico"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/peru"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Peru"
+            android:textSize="20sp" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/up"
+        android:layout_width="224dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="93dp"
+        android:layout_marginEnd="94dp"
+        android:layout_marginBottom="80dp"
+        android:onClick="sig"
+        android:text="Aceptar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity7">
+
+    <TextView
+        android:id="@+id/questionTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="¿En qué orden se encuentran los planetas del sistema solar desde el Sol?"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.053" />
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:onClick="verificar"
+        android:text="Enviar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.944" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/questionTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.7">
+
+        <RadioButton
+            android:id="@+id/optionIncorrect1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Venus, Mercurio, Tierra, Marte, Saturno, Júpiter, Neptuno, Urano" />
+
+        <RadioButton
+            android:id="@+id/optionCorrect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mercurio, Venus, Tierra, Marte, Júpiter, Saturno, Urano, Neptuno" />
+
+        <RadioButton
+            android:id="@+id/optionIncorrect2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tierra, Marte, Mercurio, Venus, Saturno, Júpiter, Urano, Neptuno" />
+
+        <RadioButton
+            android:id="@+id/optionIncorrect3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Marte, Tierra, Venus, Mercurio, Urano, Saturno, Neptuno, Júpiter" />
+
+    </RadioGroup>
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="375dp"
+        android:layout_height="248dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.685"
+        app:srcCompat="@drawable/sistema_solar" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
