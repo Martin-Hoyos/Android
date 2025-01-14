@@ -44,7 +44,7 @@
                 android:text="Maximo Decimo Meridio  &quot;El Hispano&quot;" />
 
             <RadioButton
-                android:id="@+id/Seneca"
+                android:id="@+id/Seneca2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Lucio Anneo Séneca &quot;" />
